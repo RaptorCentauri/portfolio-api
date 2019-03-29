@@ -1,0 +1,46 @@
+---
+  databases:
+    testing:
+      type: "mysql"
+      setup:
+        port: "3306"
+        host: "localhost"
+        user: "root"
+        password: process.env.testing
+        database: "portfolioDB"
+    production:
+      type: "mysql"
+      setup:
+        port: "3306"
+        host: "db.daveleoshilander.com"
+        user: "root"
+        password: process.env.production
+        database: "portfolioDB"
+        # database: "aaw84xsxogopa6"
+  fileSystems:
+    PortfolioFiles:
+      type: "s3"
+      setup:
+        s3Bucket: "files.daveleoshilander.com"
+  models:
+    projects:
+      files: "PortfolioFiles"
+      db: "production"
+      # db: "testing"
+      data:
+        name:
+          dataType: "string"
+          required: "yes"
+          encrypted: "no"
+        about:
+          dataType: "string"
+          required: "yes"
+          encrypted: "no"
+        site:
+          dataType: "string"
+          required: "yes"
+          encrypted: "no"
+        code:
+          dataType: "string"
+          required: "yes"
+          encrypted: "no"

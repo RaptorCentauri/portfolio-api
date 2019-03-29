@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-api",
+  "version": "1.0.94",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "repository": "",
+  "license": "ISC",
+  "dependencies": {
+    "@projectbuilder/projectbuilder-core": "^1.0.100",
+    "@projectbuilder/projectbuilder-fs-s3": "^1.0.7",
+    "@projectbuilder/projectbuilder-orm-mysql": "^1.0.7",
+    "yamljs": "^0.3.0"
+  }
+}
