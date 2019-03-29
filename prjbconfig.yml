@@ -16,7 +16,6 @@
         user: "root"
         password: process.env.production
         database: "portfolioDB"
-        # database: "aaw84xsxogopa6"
   fileSystems:
     PortfolioFiles:
       type: "s3"
