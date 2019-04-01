@@ -13,9 +13,9 @@
   "repository": "",
   "license": "ISC",
   "dependencies": {
-    "@projectbuilder/projectbuilder-core": "^1.0.100",
+    "@projectbuilder/projectbuilder-core": "^1.0.112",
     "@projectbuilder/projectbuilder-fs-s3": "^1.0.7",
-    "@projectbuilder/projectbuilder-orm-mysql": "^1.0.7",
+    "@projectbuilder/projectbuilder-orm-mysql": "^1.0.8",
     "yamljs": "^0.3.0"
   }
 }
